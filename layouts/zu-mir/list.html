@@ -1,0 +1,27 @@
+{{ define "main" }}
+<div class="content-wrap about-layout">
+  <aside class="gutter-left">
+    <div class="about-sticky">
+      {{ with .Params.images }}
+        <img class="about-photo zoomable" src="{{ index . 0 | relURL }}" alt="DI Martin Pfemeter">
+      {{ end }}
+      <nav class="about-nav">
+        {{ if eq .Site.Language.Lang "de" }}
+          <a href="#ausbildung">Ausbildung</a>
+          <a href="#berufserfahrung">Berufserfahrung</a>
+          <a href="#referenzen">Referenzprojekte</a>
+        {{ else if eq .Site.Language.Lang "en" }}
+          <a href="#ausbildung">Education</a>
+          <a href="#berufserfahrung">Experience</a>
+          <a href="#referenzen">Reference Projects</a>
+        {{ end }}
+      </nav>
+    </div>
+  </aside>
+
+  <article class="content">
+    {{ if .Title }}<h1>{{ .Title }}</h1>{{ end }}
+    {{ .Content }}
+  </article>
+</div>
+{{ end }}
