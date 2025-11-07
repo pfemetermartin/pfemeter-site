@@ -1,0 +1,16 @@
+<div class="about-sticky">
+  {{/* nimm das 1. Bild aus dem Front-Matter `images:` */}}
+  {{ $img := "" }}
+  {{ with .Page.Params.images }}{{ $img = (index . 0) }}{{ end }}
+  {{ if $img }}
+    <img class="about-photo" src="{{ $img | relURL }}" alt="DI Martin Pfemeter">
+  {{ end }}
+
+  <nav class="about-nav">
+    <a href="#ausbildung">Ausbildung</a>
+    <a href="#berufserfahrung">Berufserfahrung</a>
+    <a href="#referenzen">Referenzprojekte</a>
+  </nav>
+</div>
+
+<div class="about-offset"></div>

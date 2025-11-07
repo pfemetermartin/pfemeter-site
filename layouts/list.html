@@ -1,0 +1,17 @@
+{{ define "main" }}
+  <div class="content-wrap">
+    {{/* Wenn Bilder im Front-Matter stehen, zeig sie (z. B. bei Sparten) */}}
+    {{ with .Params.images }}
+      <aside class="gutter-left">
+        {{ range . }}
+          <img class="zoomable" src="{{ . | relURL }}" alt="">
+        {{ end }}
+      </aside>
+    {{ end }}
+
+    <article class="content">
+      {{ if .Title }}<h1>{{ .Title }}</h1>{{ end }}
+      {{ .Content }}
+    </article>
+  </div>
+{{ end }}

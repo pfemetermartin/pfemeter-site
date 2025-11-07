@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "de" }}">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>{{ if .Title }}{{ .Title }} · {{ end }}{{ .Site.Title }}</title>
+
+  {{ if templates.Exists "partials/meta.html" }}
+    {{ partial "meta.html" . }}
+  {{ end }}
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+
+
+
+
+<body>
+
+  {{ partial "header.html" . }}
+
+  {{ if .IsHome }}
+    {{ partial "hero.html" . }}
+  {{ end }}
+
+  <main class="site-main">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  {{ if templates.Exists "partials/footer.html" }}
+    {{ partial "footer.html" . }}
+  {{ end }}
+
+  <!-- Bild-Zoom Script (behalten) -->
+  <script>
+  (function(){
+    let overlay = null, modalImg = null;
+
+    function closeModal(){
+      if (modalImg) { modalImg.remove(); modalImg = null; }
+      if (overlay)  { overlay.remove();  overlay = null;  }
+      document.body.classList.remove('zoom-open');
+    }
+
+    document.addEventListener('click', function(e){
+      const img = e.target.closest('img.zoomable');
+      if (!img) return;
+
+      if (!modalImg){
+        overlay = document.createElement('div');
+        overlay.className = 'zoom-overlay';
+        overlay.addEventListener('click', closeModal);
+        document.body.appendChild(overlay);
+
+        modalImg = document.createElement('img');
+        modalImg.className = 'zoom-modal';
+        modalImg.src = img.currentSrc || img.src;
+        modalImg.alt = img.alt || '';
+        modalImg.addEventListener('click', closeModal);
+        document.body.appendChild(modalImg);
+
+        document.body.classList.add('zoom-open');
+      } else {
+        closeModal();
+      }
+    });
+
+    document.addEventListener('keydown', function(e){
+      if (e.key === 'Escape') closeModal();
+    });
+  })();
+  </script>
+
+</body>
+</html>
