@@ -1,0 +1,82 @@
+<header class="site-header">
+  <div class="header-left">
+
+    <!-- Sprachumschalter: immer nebeneinander (inline styles) -->
+    <div class="lang-switch" style="display:flex;flex-direction:row;align-items:center;gap:8px">
+      {{ $trs := .Translations }}
+      {{ $flagMap := dict "de" "at.svg" "en" "en.svg" }}
+
+      {{ range .Site.Languages }}
+        {{ $lang := .Lang }}
+        {{ $active := eq $lang $.Site.Language.Lang }}
+
+        {{/* passende Übersetzung dieser Seite; Fallback: Home der Sprache */}}
+        {{ $target := (index (where $trs "Site.Language.Lang" $lang) 0) }}
+        {{ if not $target }}
+          {{ $target = (index (where site.Sites "Language.Lang" $lang) 0).Home }}
+        {{ end }}
+
+        {{ $flagFile := index $flagMap $lang | default (printf "%s.svg" $lang) }}
+
+        {{ if $active }}
+          <span class="flag active"
+                aria-current="true"
+                title="{{ .LanguageName }}"
+                style="display:inline-flex;align-items:center;justify-content:center;padding:4px 6px;border-radius:8px;line-height:0;outline:1px solid var(--line);background:#f6f7f8;cursor:default">
+            <img src="/img/flags/{{ $flagFile }}" alt="{{ upper $lang }}" width="20" height="14" style="display:block">
+          </span>
+        {{ else }}
+          <a class="flag"
+             href="{{ $target.RelPermalink }}"
+             hreflang="{{ $lang }}"
+             aria-label="{{ .LanguageName }}"
+             title="{{ .LanguageName }}"
+             style="display:inline-flex;align-items:center;justify-content:center;padding:4px 6px;border-radius:8px;line-height:0">
+            <img src="/img/flags/{{ $flagFile }}" alt="{{ upper $lang }}" width="20" height="14" style="display:block">
+          </a>
+        {{ end }}
+      {{ end }}
+    </div>
+
+  </div>
+
+  <nav class="site-nav">
+    <ul id="nav" class="menu">
+      {{ $current := . }}
+      {{ range site.Menus.main }}
+        {{ $isActive := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
+        {{ if .HasChildren }}
+          <li class="menu-item has-children{{ if $isActive }} active{{ end }}">
+            <span class="menu-link" style="cursor:default;">{{ .Name }}</span>
+            <ul class="submenu">
+              {{ range .Children }}
+                {{ $isChildActive := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
+                <li class="{{ if $isChildActive }}active{{ end }}">
+                  <a class="submenu-link" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+                </li>
+              {{ end }}
+            </ul>
+          </li>
+        {{ else }}
+          <li class="menu-item{{ if $isActive }} active{{ end }}">
+            <a class="menu-link" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+          </li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  </nav>
+</header>
+
+<script>
+/* Touch-freundliches Dropdown (nur Geräte ohne Hover) */
+(function () {
+  var mqNoHover = window.matchMedia('(hover: none)');
+  if (!mqNoHover.matches) return;
+  document.querySelectorAll('.menu-item.has-children > .menu-link').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      link.parentElement.classList.toggle('open');
+    });
+  });
+})();
+</script>

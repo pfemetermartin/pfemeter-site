@@ -1,0 +1,63 @@
+{{ define "main" }}
+
+{{/* 0) Sprache & Labels */}}
+{{ $lang := .Site.Language.Lang }}
+{{ $isEN := eq $lang "en" }}
+
+{{ $section := cond $isEN "services" "sparten" }}
+
+{{ $lblContact := cond $isEN "Contact" "Kontakt" }}
+{{ $lblAbout   := cond $isEN "About" "Über mich" }}
+{{ $lblImprint := cond $isEN "Imprint" "Impressum" }}
+
+{{ $urlContact := (printf "/%s/" (cond $isEN "contact" "kontakt"))   | relLangURL }}
+{{ $urlAbout   := (printf "/%s/" (cond $isEN "about" "zu-mir"))       | relLangURL }}
+{{ $urlImprint := (printf "/%s/" (cond $isEN "imprint" "impressum"))  | relLangURL }}
+
+{{/* 1) Hero */}}
+<section class="hero">
+  <h1>{{ .Site.Title }}</h1>
+  {{ with .Site.Params.tagline }}
+    <p class="subtitle mono">{{ . }}</p>
+  {{ end }}
+</section>
+
+{{/* 2) Tiles aus Data (data/sparten.yaml und data/en/sparten.yaml) */}}
+{{ $tiles := .Site.Data.sparten }}
+{{ with (index .Site.Data .Site.Language.Lang) }}
+  {{ $tiles = (index . "sparten") | default $tiles }}
+{{ end }}
+
+<section class="tiles no-img">
+  {{ range $tiles }}
+    {{ $slug := index . "slug" }}
+    {{ $col  := or (index . "color")  "#0b0c0f" }}
+    {{ $acc  := or (index . "accent") "#0b0c0f" }}
+    {{ $tileURL := (printf "/%s/%s/" $section $slug) | relLangURL }}
+
+    <a class="tile tile--plain"
+       href="{{ $tileURL }}"
+       style="--tile-border: {{ $col }}; --tile-accent: {{ $acc }};">
+      <div class="tile-inner">
+        {{ $raw := index . "title" }}
+        {{ $pretty := $raw | replaceRE "^(.+?)\\s*\\((.+)\\)$" "${1}<br>(${2})" | safeHTML }}
+        <h2>{{ $pretty }}</h2>
+        {{ with (index . "tagline") }}
+          <p class="desc mono">{{ . }}</p>
+        {{ end }}
+      </div>
+      <span class="tile-caret">↗</span>
+    </a>
+  {{ end }}
+</section>
+
+{{/* 3) CTA-Buttons */}}
+<section class="about-cta">
+  <div class="cta">
+    <a class="btn btn-cta" href="{{ $urlContact }}">{{ $lblContact }}</a>
+    <a class="btn btn-cta" href="{{ $urlAbout }}">{{ $lblAbout }}</a>
+    <a class="btn btn-cta" href="{{ $urlImprint }}">{{ $lblImprint }}</a>
+  </div>
+</section>
+
+{{ end }}

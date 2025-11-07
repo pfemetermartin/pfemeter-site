@@ -1,0 +1,166 @@
+baseURL = "https://www.pfemeter.at/"
+title = 'Dipl.-Ing. Martin Pfemeter Zeichenbüro & Beratung e.U.'
+defaultContentLanguage = "de"
+defaultContentLanguageInSubdir = false
+enableRobotsTXT = true
+
+# Globale Params (optional)
+[params]
+  brand   = "Pfemeter"
+  tagline = "Präzise 3D-Modellierung & Beratung für Wasser-, Infrastruktur- und Bauprojekte"
+
+[languages]
+
+  [languages.de]
+    languageName = "Deutsch"
+    weight = 1
+    contentDir = "content"
+    title = 'Dipl.-Ing. Martin Pfemeter Zeichenbüro & Beratung e.U.'
+    [languages.de.params]
+      brand   = "Pfemeter"
+      tagline = "Präzise 3D-Modellierung & Beratung für Wasser-, Infrastruktur- und Bauprojekte"
+
+  [languages.en]
+    languageName = "English"
+    weight = 2
+    contentDir = "content/en"
+    title = 'Dipl.-Ing. Martin Pfemeter Zeichenbüro & Beratung e.U.'
+    [languages.en.params]
+      brand   = "Pfemeter"
+      tagline = "Precise 3D Modeling & Consulting for Water, Infrastructure, and Construction Projects"
+
+# Menüs pro Sprache
+[languages.de.menu]
+  [[languages.de.menu.main]]
+    name = "Start"
+    url  = "/"
+    weight = 1
+  [[languages.de.menu.main]]
+    name = "Über mich"
+    url  = "/zu-mir/"
+    weight = 2
+  [[languages.de.menu.main]]
+    name = "Sparten"
+    url  = "/sparten/"
+    weight = 3
+
+
+
+     # Kinder (kurze Labels, einzeilig)
+     [[languages.de.menu.main]]
+     parent = "Sparten"
+     name = "3D Solids"
+     url  = "/Sparten/3d-solid/"
+     weight = 31
+ 
+     [[languages.de.menu.main]]
+     parent = "Sparten"
+     name = "3D Surfaces"
+     url  = "/sparten/3d-surfaces-civil/"
+     weight = 32
+ 
+     [[languages.de.menu.main]]
+     parent = "Sparten"
+     name = "Rohrnetze"
+     url  = "/sparten/3d-leitungsnetzwerke/"
+     weight = 33
+ 
+     [[languages.de.menu.main]]
+     parent = "Sparten"
+     name = "AG-Unterstützung"
+     url  = "/sparten/auftraggeberunterstuetzung/"
+     weight = 34
+ 
+     [[languages.de.menu.main]]
+     parent = "Sparten"
+     name = "Ingenieurleistungen"
+     url  = "/sparten/ingenieurleistungen/"
+     weight = 35
+ 
+     [[languages.de.menu.main]]
+     parent = "Sparten"
+     name = "Innovation"
+     url  = "/sparten/innovation/"
+     weight = 36
+
+
+
+  [[languages.de.menu.main]]
+    name = "Kontakt"
+    url  = "/kontakt/"
+    weight = 4
+  [[languages.de.menu.main]]
+    name = "Impressum"
+    url  = "/impressum/"
+    weight = 5
+  [[languages.de.menu.main]]
+    name = "Datenschutz"
+    url  = "/datenschutz/"
+    weight = 6
+
+[languages.en.menu]
+  [[languages.en.menu.main]]
+    name = "Home"
+    url  = "/"
+    weight = 1
+  [[languages.en.menu.main]]
+    name = "About"
+    url  = "/en/zu-mir/"
+    weight = 2
+  [[languages.en.menu.main]]
+    name = "Services"
+    url  = "/en/sparten/"
+    weight = 3
+
+   [[languages.en.menu.main]]
+     parent = "Services"
+     name = "3D Solid"
+     url  = "/sparten/3d-solid/"
+     weight = 31
+ 
+     [[languages.en.menu.main]]
+     parent = "Services"
+     name = "3D Surfaces"
+     url  = "/sparten/3d-surfaces-civil/"
+     weight = 32
+ 
+     [[languages.en.menu.main]]
+     parent = "Services"
+     name = "Pipe-Networks"
+     url  = "/sparten/3d-leitungsnetzwerke/"
+     weight = 33
+ 
+     [[languages.en.menu.main]]
+     parent = "Services"
+     name = "Client Support"
+     url  = "/sparten/auftraggeberunterstuetzung/"
+     weight = 34
+ 
+     [[languages.en.menu.main]]
+     parent = "Services"
+     name = "Engineering"
+     url  = "/sparten/ingenieurleistungen/"
+     weight = 35
+ 
+     [[languages.en.menu.main]]
+     parent = "Services"
+     name = "Innovation"
+     url  = "/sparten/innovation/"
+     weight = 36
+ 
+ 
+
+
+
+  [[languages.en.menu.main]]
+    name = "Contact"
+    url  = "/en/kontakt/"
+    weight = 4
+  [[languages.en.menu.main]]
+    name = "Imprint"
+    url  = "/en/impressum/"
+    weight = 5
+  [[languages.en.menu.main]]
+    name = "Privacy"
+    url  = "/en/datenschutz/"
+    weight = 6

@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <div class="content-wrap">
+    <aside class="gutter-left">
+      {{ with .Params.images }}
+        {{ range . }}
+          <img class="zoomable" src="{{ . }}" alt="">
+        {{ end }}
+      {{ end }}
+    </aside>
+
+    <article class="content">
+      {{ if .Title }}<h1>{{ .Title }}</h1>{{ end }}
+      {{ .Content }}
+    </article>
+  </div>
+{{ end }}

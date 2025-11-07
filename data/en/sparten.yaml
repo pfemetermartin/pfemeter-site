@@ -1,0 +1,35 @@
+- title: "3D Modeling (Solid)"
+  slug: "3d-solid"
+  tagline: "Precise volume modeling"
+  color: "#111827"
+  accent: "#4F46E5"
+
+- title: "3D Modeling (Surfaces / Civil)"
+  slug: "3d-surfaces-civil"
+  tagline: "Freeform surfaces, terrain, civil engineering"
+  color: "#111827"
+  accent: "#059669"
+
+- title: "3D Modeling (Pipe Networks)"
+  slug: "3d-leitungsnetzwerke"
+  tagline: "Planning and modeling of complex sewer, water, and piping network systems"
+  color: "#111827"
+  accent: "#10B981"     # sanftes Grün
+
+- title: "Client Support & Consulting"
+  slug: "auftraggeberunterstuetzung"
+  tagline: "From concept to implementation"
+  color: "#111827"
+  accent: "#DB2777"
+
+- title: "Engineering Services (In Development)"
+  slug: "ingenieurleistungen"
+  tagline: "Subject to qualification approval"
+  color: "#111827"
+  accent: "#0EA5E9"
+
+- title: "Innovation"
+  slug: "innovation"
+  tagline: "Try me – if it sparks my interest, consider it done"
+  color: "#111827"
+  accent: "#F59E0B"
