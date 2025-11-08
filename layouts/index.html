@@ -1,20 +1,24 @@
 {{ define "main" }}
 
-{{/* 0) Sprache & Labels */}}
+{{/* Sprache */}}
 {{ $lang := .Site.Language.Lang }}
+
+{{/* URLs robust per GetPage (zieht automatisch die richtige Sprache) */}}
+{{ with site.GetPage "kontakt" }}   {{ $urlContact := .RelPermalink }}   {{ end }}
+{{ with site.GetPage "zu-mir" }}    {{ $urlAbout   := .RelPermalink }}   {{ end }}
+{{ with site.GetPage "impressum" }} {{ $urlImprint := .RelPermalink }}   {{ end }}
+
+{{ $urlContact := (site.GetPage "kontakt").RelPermalink }}
+{{ $urlAbout   := (site.GetPage "zu-mir").RelPermalink }}
+{{ $urlImprint := (site.GetPage "impressum").RelPermalink }}
+
+{{/* Labels */}}
 {{ $isEN := eq $lang "en" }}
-
-{{ $section := cond $isEN "services" "sparten" }}
-
 {{ $lblContact := cond $isEN "Contact" "Kontakt" }}
 {{ $lblAbout   := cond $isEN "About" "Über mich" }}
 {{ $lblImprint := cond $isEN "Imprint" "Impressum" }}
 
-{{ $urlContact := (printf "/%s/" (cond $isEN "contact" "kontakt"))   | relLangURL }}
-{{ $urlAbout   := (printf "/%s/" (cond $isEN "about" "zu-mir"))       | relLangURL }}
-{{ $urlImprint := (printf "/%s/" (cond $isEN "imprint" "impressum"))  | relLangURL }}
-
-{{/* 1) Hero */}}
+{{/* Hero */}}
 <section class="hero">
   <h1>{{ .Site.Title }}</h1>
   {{ with .Site.Params.tagline }}
@@ -22,7 +26,7 @@
   {{ end }}
 </section>
 
-{{/* 2) Tiles aus Data (data/sparten.yaml und data/en/sparten.yaml) */}}
+{{/* Tiles aus Data (Sektion: immer "sparten") */}}
 {{ $tiles := .Site.Data.sparten }}
 {{ with (index .Site.Data .Site.Language.Lang) }}
   {{ $tiles = (index . "sparten") | default $tiles }}
@@ -30,28 +34,17 @@
 
 <section class="tiles no-img">
   {{ range $tiles }}
-    {{ $slug := index . "slug" }}
-    {{ $col  := or (index . "color")  "#0b0c0f" }}
-    {{ $acc  := or (index . "accent") "#0b0c0f" }}
-    {{ $tileURL := (printf "/%s/%s/" $section $slug) | relLangURL }}
-
-    <a class="tile tile--plain"
-       href='{{ (print "/sparten/" .slug "/") | relLangURL }}'>
-       
+    <a class="tile tile--plain" href='{{ (print "/sparten/" .slug "/") | relLangURL }}'>
       <div class="tile-inner">
-        {{ $raw := index . "title" }}
-        {{ $pretty := $raw | replaceRE "^(.+?)\\s*\\((.+)\\)$" "${1}<br>(${2})" | safeHTML }}
-        <h2>{{ $pretty }}</h2>
-        {{ with (index . "tagline") }}
-          <p class="desc mono">{{ . }}</p>
-        {{ end }}
+        <h2>{{ .title | safeHTML }}</h2>
+        {{ with .tagline }}<p class="desc mono">{{ . }}</p>{{ end }}
       </div>
       <span class="tile-caret">↗</span>
     </a>
   {{ end }}
 </section>
 
-{{/* 3) CTA-Buttons */}}
+{{/* CTA-Buttons (jetzt korrekt) */}}
 <section class="about-cta">
   <div class="cta">
     <a class="btn btn-cta" href="{{ $urlContact }}">{{ $lblContact }}</a>

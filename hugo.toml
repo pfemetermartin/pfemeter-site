@@ -1,4 +1,4 @@
-baseURL = "https://www.pfemeter.at/de/"
+baseURL = "https://www.pfemeter.at/"
 title = 'Dipl.-Ing. Martin Pfemeter Zeichenbüro & Beratung e.U.'
 defaultContentLanguage = "de"
 defaultContentLanguageInSubdir = false
