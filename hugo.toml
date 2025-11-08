@@ -26,6 +26,20 @@ term     = ["HTML", "RSS"]
 [params]
   brand   = "Pfemeter"
   tagline = "Präzise 3D-Modellierung & Beratung für Wasser-, Infrastruktur- und Bauprojekte"
+  description = "Präzise 3D-Modelle (Solid & Civil), Leitungsnetzwerke und technische Beratung für Wasser-, Infrastruktur- und Bauprojekte."
+
+  [params.business]
+    logo = "/og/pfemeter-logo.png"
+    sameAs = [
+      "https://www.linkedin.com/company/pfemeter-eu",
+      "https://www.instagram.com/martin.pfemeter"
+    ]
+
+    [params.business.address]
+      street   = "rummelhardtgasse 2/21"
+      city     = "Wien"
+      postcode = "1090"
+      country  = "AT"
 
 [languages]
 
