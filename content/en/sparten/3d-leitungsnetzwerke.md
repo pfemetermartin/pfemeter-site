@@ -1,7 +1,10 @@
 +++
 date = '2025-11-05T21:39:43+01:00'
-draft = true
 title = '3D Modeling - Pipe Networks'
+type = "sparte"
+description = "3D modelling and coordination of complex pipeline and utility networks. Efficient BIM integration and precise documentation for infrastructure projects."
+keywords = ["network modelling", "BIM", "infrastructure", "3D", "Pfemeter", "Vienna"]
+image = "/og/en-sparten-3d-networks.jpg"
 +++
 I model pipeline networks in 3D – from compact plant piping to complex supply infrastructures.
 

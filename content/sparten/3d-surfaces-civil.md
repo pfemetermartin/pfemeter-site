@@ -1,7 +1,10 @@
 +++
 date = '2025-11-05T21:39:43+01:00'
-draft = true
 title = '3D Modellierung - Surfaces / Civil'
+type = "sparte"
+description = "Gelände-, DGM- und Oberflächenmodellierung mit Civil 3D. Exakte Basis für hydraulische, topografische und bautechnische Anwendungen."
+keywords = ["Civil 3D", "Geländemodell", "DGM", "Oberflächen", "Wasserbau", "Pfemeter", "Wien"]
+image = "/og/sparten-3d-surfaces.jpg"
 +++
 Gelände, Leitungen, Bauwerke – sichtbar gemacht, bevor sie entstehen.
 Ich erstelle und bearbeite 3D-Oberflächenmodelle für Infrastruktur-, Wasser- und Tiefbau-projekte. Von Geländemodellen und Rohrnetzen bis zu komplexen Fluss- und Speicheranlagen – die Modelle bilden die Grundlage für Variantenstudien, Massenberechnungen, BIM-Workflows und Visualisierungen.

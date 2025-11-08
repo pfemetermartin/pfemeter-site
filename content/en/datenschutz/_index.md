@@ -1,6 +1,13 @@
 ---
 title: "Privacy Policy"
-
+description: "Information on data protection and processing of personal data according to the GDPR."
+keywords:
+  - privacy
+  - GDPR
+  - Pfemeter
+  - Vienna
+outputs:
+  - HTML
 ---
 
 Last updated: November 2025

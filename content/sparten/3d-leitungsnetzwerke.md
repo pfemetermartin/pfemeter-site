@@ -1,7 +1,10 @@
 +++
 date = '2025-11-05T21:39:43+01:00'
-draft = true
 title = '3D Modellierung Leitungsnetzwerke'
+type = "sparte"
+description = "Modellierung und Koordination komplexer Leitungsnetze. Effiziente Integration in BIM-Modelle und präzise Dokumentation für Infrastrukturprojekte."
+keywords = ["Leitungsnetz", "Infrastruktur", "BIM", "3D Modellierung", "Pfemeter", "Wien"]
+image = "/og/sparten-3d-leitungsnetz.jpg"
 +++
 Ich modelliere Leitungsnetzwerke in 3D – von kompakten Anlagenverrohrungen bis zu komplexen Versorgungsstrukturen.
 

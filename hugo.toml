@@ -4,6 +4,24 @@ defaultContentLanguage = "de"
 defaultContentLanguageInSubdir = false
 enableRobotsTXT = true
 
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.parser]
+      attribute = true
+      autoHeadingID = true
+
+[outputs]
+home    = ["HTML", "RSS"]
+section = ["HTML", "RSS"]
+page    = ["HTML", "RSS"]
+taxonomy = ["HTML", "RSS"]
+term     = ["HTML", "RSS"]
+
+
+
 # Globale Params (optional)
 [params]
   brand   = "Pfemeter"
@@ -50,7 +68,7 @@ enableRobotsTXT = true
      [[languages.de.menu.main]]
      parent = "Sparten"
      name = "3D Solids"
-     url  = "/Sparten/3d-solid/"
+     url  = "/sparten/3d-solid/"
      weight = 31
  
      [[languages.de.menu.main]]
@@ -115,37 +133,37 @@ enableRobotsTXT = true
    [[languages.en.menu.main]]
      parent = "Services"
      name = "3D Solid"
-     url  = "/sparten/3d-solid/"
+     url  = "/en/sparten/3d-solid/"
      weight = 31
  
      [[languages.en.menu.main]]
      parent = "Services"
      name = "3D Surfaces"
-     url  = "/sparten/3d-surfaces-civil/"
+     url  = "/en/sparten/3d-surfaces-civil/"
      weight = 32
  
      [[languages.en.menu.main]]
      parent = "Services"
      name = "Pipe-Networks"
-     url  = "/sparten/3d-leitungsnetzwerke/"
+     url  = "/en/sparten/3d-leitungsnetzwerke/"
      weight = 33
  
      [[languages.en.menu.main]]
      parent = "Services"
      name = "Client Support"
-     url  = "/sparten/auftraggeberunterstuetzung/"
+     url  = "/en/sparten/auftraggeberunterstuetzung/"
      weight = 34
  
      [[languages.en.menu.main]]
      parent = "Services"
      name = "Engineering"
-     url  = "/sparten/ingenieurleistungen/"
+     url  = "/en/sparten/ingenieurleistungen/"
      weight = 35
  
      [[languages.en.menu.main]]
      parent = "Services"
      name = "Innovation"
-     url  = "/sparten/innovation/"
+     url  = "/en/sparten/innovation/"
      weight = 36
  
  

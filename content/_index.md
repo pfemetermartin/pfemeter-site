@@ -1,6 +1,16 @@
 ---
 title: "Pfemeter – Zeichenbüro & Beratung"
-description: "3D-Modellierung, Auftraggeberunterstützung, Ingenieurleistungen und Innovation."
+description: "Präzise 3D-Modelle (Solid & Civil), Leitungsnetzwerke und technische Beratung für Wasser-, Infrastruktur- und Bauprojekte. Dipl.-Ing. Martin Pfemeter | Wien."
+keywords:
+  - 3D Modellierung
+  - Civil 3D
+  - Wasserbau
+  - Infrastruktur
+  - Leitungsnetz
+  - BIM
+  - Zeichenbüro
+  - Wien
+image: "/og/pfemeter-cover.jpg"
 ---
 
 ## Zeichenbüro & Beratung e.U.

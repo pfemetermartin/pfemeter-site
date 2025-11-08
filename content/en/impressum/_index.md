@@ -1,5 +1,13 @@
 ---
 title: "Imprint"
+description: "Legal information and company details of Dipl.-Ing. Martin Pfemeter, Design Office & Consulting e.U., Vienna."
+keywords:
+  - legal notice
+  - Pfemeter
+  - Vienna
+  - consulting
+outputs:
+  - HTML
 ---
 # Legal Notice
 

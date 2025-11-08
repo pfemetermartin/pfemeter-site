@@ -1,7 +1,10 @@
 +++
 date = '2025-11-05T21:39:43+01:00'
-draft = true
 title = '3D Modeling - Surfaces'
+type = "sparte"
+description = "Surface and terrain modelling with Civil 3D. Accurate DTM and ground models for hydraulic, topographic and engineering applications."
+keywords = ["Civil 3D", "terrain", "DTM", "surface", "infrastructure", "Pfemeter", "Vienna"]
+image = "/og/en-sparten-3d-surfaces.jpg"
 +++
 Terrain, pipelines, structures – visualised before they exist.
 

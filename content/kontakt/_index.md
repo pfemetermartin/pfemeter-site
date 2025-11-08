@@ -1,5 +1,15 @@
 ---
 title: "Kontakt"
+description: "Kontaktieren Sie Dipl.-Ing. Martin Pfemeter für 3D-Modellierung, Wasser- und Infrastrukturprojekte. Wien & Umgebung."
+keywords:
+  - Kontakt
+  - Pfemeter
+  - 3D Modellierung
+  - Wasserbau
+  - Wien
+image: "/og/pfemeter-office.jpg"
+outputs:
+  - HTML
 ---
 
 ## Dipl.-Ing. Martin Pfemeter Zeichenbüro & Beratung e.U.

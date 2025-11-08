@@ -3,7 +3,9 @@ title = "3D Modeling - Solids"
 date = "2025-11-05T21:39:43+01:00"
 draft = true
 type = "sparte"
-description = "Volumenmodellierung für Bauteile & Produkte."
+description = 'Volume-based 3D modelling for components, structures and technical assemblies. Accurate CAD models for planning, visualization and execution.'
+keywords = ["3D modelling", "solid", "CAD", "engineering", "Pfemeter", "Vienna"]
+image = "/og/en-sparten-3d-solid.jpg"
 +++
 From concept to form – precise, versatile, combinable.
 

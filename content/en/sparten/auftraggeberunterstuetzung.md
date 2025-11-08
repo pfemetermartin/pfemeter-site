@@ -1,27 +1,29 @@
 +++
 date = '2025-11-05T21:39:43+01:00'
-draft = true
 title = 'Client Suppoprt & Consulting'
+type = "sparte"
+description = "Supporting clients in planning coordination, quality assurance and technical communication. Professional advice for efficient project workflows."
+keywords = ["consulting", "client support", "project coordination", "engineering", "Pfemeter", "Vienna"]
+image = "/og/en-sparten-consulting.jpg"
 +++
-Clear decisions require clear foundations.
+# Clear decisions require clear foundations.
 
-I support public and private clients throughout all project phases – from concept development through planning and tendering to execution.  
-Thanks to my experience on **both sides** – as client and as planner – I know the technical, organisational and economic requirements as well as the practical processes on site.
+I support public and private clients throughout **all project phases** – from concept development, planning, variant studies, authority procedures, RuI schedules, tender documents and awarding, right through to execution and handover into operation. Thanks to my long-standing experience on both sides – as client and as planner – I know the technical, organizational, and economic requirements inside out, as well as the practical workflows on construction sites. Whether standards, project manuals, budget planning, cost tracking, or controlling: I ensure clear structures, efficient communication, and minimal friction losses among all stakeholders.
 
-## My project experience covers:
+## My project experience includes:
 - Mechanical and plant engineering  
 - Infrastructure and hydraulic engineering  
-- Concrete structures (including white tank construction)  
+- Concrete structures (incl. white tank / waterproof concrete)
 
-I have managed projects both as **project manager** and as **site supervisor (ÖBA)** and understand the interfaces between planning, execution and operation from first-hand experience.
+I have managed projects both as project manager and as site supervisor (ÖBA) and understand the interfaces between planning, execution, and operation from hands-on practice.  
 
-My focus: **efficient communication**, structured decision-making and minimisation of friction between project partners.  
-I use **BIM pragmatically** – exactly where it adds real value, never dogmatically.
+**My focus:** Efficient communication, structured decision-making, and minimization of friction between project partners. I use BIM exactly where it adds real value – pragmatically, not dogmatically.
 
 ## Core services
 - Project management and deputy project management  
-- Preparation of bills of quantities and tender documents (planning and construction services, including BIM/AIA references)  
-- Support with tendering procedures and contract management  
-- Project structuring, cost tracking and controlling  
-- Preparation of decision-making documents for internal and external approvals  
-- Support for project teams during transition phases (e.g. change of project manager or planner)
+- Planning, variant development, and authority approval procedures  
+- Preparation of specifications, RuI schedules, and tender documents (design and construction services, incl. BIM/AIA requirements)  
+- Support with tendering, contract management, and standards  
+- Project structuring, project manuals, budget planning, cost tracking, controlling  
+- Preparation of decision bases for internal and external approvals  
+- Support of project teams during transition phases (e.g. change of project manager or planner)

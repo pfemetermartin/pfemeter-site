@@ -1,6 +1,13 @@
 ---
 title: "Datenschutz"
-
+description: "Informationen zum Datenschutz dieser Website und zur Verarbeitung personenbezogener Daten gemäß DSGVO."
+keywords:
+  - Datenschutz
+  - DSGVO
+  - Pfemeter
+  - Wien
+outputs:
+  - HTML
 ---
 
 Stand: November 2025

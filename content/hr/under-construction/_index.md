@@ -1,7 +1,8 @@
 ---
 title: "Under Construction"
-url: "/under-construction/"
 nohero: true
+outputs:
+  - HTML
 ---
 
 ![](/img/under_construction.jpg)

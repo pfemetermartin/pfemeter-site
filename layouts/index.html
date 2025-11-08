@@ -36,8 +36,8 @@
     {{ $tileURL := (printf "/%s/%s/" $section $slug) | relLangURL }}
 
     <a class="tile tile--plain"
-       href="{{ $tileURL }}"
-       style="--tile-border: {{ $col }}; --tile-accent: {{ $acc }};">
+       href='{{ (print "/sparten/" .slug "/") | relLangURL }}'>
+       
       <div class="tile-inner">
         {{ $raw := index . "title" }}
         {{ $pretty := $raw | replaceRE "^(.+?)\\s*\\((.+)\\)$" "${1}<br>(${2})" | safeHTML }}

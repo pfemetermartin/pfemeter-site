@@ -1,7 +1,10 @@
 +++
 date = '2025-11-05T21:39:44+01:00'
-draft = true
 title = 'Innovation und interdisziplinäre Projekte'
+type = "sparte"
+description = "Interdisziplinäre Projekte an der Schnittstelle von Technik, Forschung und Kultur. Neue Perspektiven durch experimentelle Ansätze und technisches Know-how."
+keywords = ["Innovation", "Forschung", "Technik", "Kultur", "interdisziplinär", "Pfemeter", "Wien"]
+image = "/og/sparten-innovation.jpg"
 +++
 Durch mein fachübergreifendes technisches Wissen und mein persönliches Interesse an **Innovation, Forschung, künstlicher Intelligenz, Programmierung, Philosophie, Architektur, Kunst und Kultur** bin ich besonders an Projekten interessiert, die auf den ersten Blick **nicht** in mein klassisches Tätigkeitsfeld fallen.
 

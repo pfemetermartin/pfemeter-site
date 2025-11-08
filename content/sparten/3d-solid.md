@@ -1,9 +1,10 @@
 ﻿+++
 title = "3D Modellierung - Solid"
 date = "2025-11-05T21:39:43+01:00"
-draft = true
 type = "sparte"
-description = "Volumenmodellierung für Bauteile & Produkte."
+description = "Volumenbasierte 3D-Modellierung für Bauteile, Bauwerke und Strukturen. Präzise CAD-Modelle für Planung, Visualisierung und Ausführung."
+keywords = ["3D Modellierung", "Solid", "CAD", "Bauwerke", "Pfemeter", "Wien"]
+image = "/og/sparten-3d-solid.jpg"
 +++
 Von der Idee zur Form – präzise, vielseitig, kombinierbar.
 3D-Modellierung Solid von der Idee zur Form – präzise, vielseitig, kombinierbar.

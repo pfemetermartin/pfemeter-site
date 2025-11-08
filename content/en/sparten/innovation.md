@@ -1,7 +1,10 @@
 +++
 date = '2025-11-05T21:39:44+01:00'
-draft = true
 title = 'Innovation & Interdisciplinary Projects'
+type = "sparte"
+description = "Interdisciplinary projects at the intersection of technology, research and culture. New perspectives through experimental approaches and technical expertise."
+keywords = ["innovation", "research", "technology", "culture", "interdisciplinary", "Pfemeter", "Vienna"]
+image = "/og/en-sparten-innovation.jpg"
 +++
 Thanks to my cross-disciplinary technical knowledge and personal passion for **innovation, research, artificial intelligence, programming, philosophy, architecture, art and culture**, I am particularly drawn to projects that – at first glance – do **not** fit into my classic field of work.
 

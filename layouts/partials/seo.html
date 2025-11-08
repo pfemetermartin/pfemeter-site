@@ -1,0 +1,102 @@
+{{- $title := .Title | default .Site.Title -}}
+{{- $desc := .Params.description | default .Site.Params.description -}}
+{{- $image := .Params.image | default "/og/pfemeter-cover.jpg" -}}
+
+<title>{{ $title }}</title>
+<meta name="description" content="{{ $desc }}">
+<meta name="keywords" content="{{ delimit (.Params.keywords | default (slice)) ", " }}">
+<link rel="canonical" href="{{ .Permalink }}">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:image" content="{{ $image }}">
+<meta property="og:locale" content="{{ .Site.Language.Lang | default "de_AT" }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $desc }}">
+<meta name="twitter:image" content="{{ $image }}">
+
+
+<!-- ========================= -->
+<!-- Existing meta and OG tags -->
+<!-- ========================= -->
+
+<meta name="twitter:image" content="{{ $image }}">
+
+<!-- ========================= -->
+<!-- JSON-LD Schema.org -->
+<!-- ========================= -->
+
+<!-- 1. Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Pfemeter – Zeichenbüro & Beratung e.U.",
+  "url": "{{ .Site.BaseURL }}",
+  "logo": "{{ "/og/pfemeter-logo.png" | absURL }}",
+  "sameAs": [
+    "https://www.linkedin.com/company/pfemeter-eu",
+    "https://www.instagram.com/martin.pfemeter"
+  ],
+  "description": {{ (.Params.description | default .Site.Params.description) | jsonify }}
+}
+</script>
+
+<!-- 2. WebSite -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "url": "{{ .Site.BaseURL }}",
+  "name": {{ .Site.Title | jsonify }},
+  "inLanguage": "{{ .Site.Language.Lang }}",
+  "alternateName": "Pfemeter",
+  "sameAs": [
+    "https://www.linkedin.com/company/pfemeter-eu",
+    "https://www.instagram.com/martin.pfemeter"
+  ]
+}
+</script>
+
+<!-- 3. ProfessionalService -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Pfemeter – Zeichenbüro & Beratung e.U.",
+  "url": "{{ .Site.BaseURL }}",
+  "image": "{{ "/og/pfemeter-cover.jpg" | absURL }}",
+  "description": {{ (.Params.description | default .Site.Params.description) | jsonify }},
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Wien"
+  }
+}
+</script>
+
+<!-- 4. Service (nur bei type = 'sparte') -->
+{{ if eq .Params.type "sparte" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": {{ .Title | jsonify }},
+  "url": "{{ .Permalink }}",
+  "provider": {
+    "@type": "Organization",
+    "name": "Pfemeter – Zeichenbüro & Beratung e.U.",
+    "url": "{{ .Site.BaseURL }}"
+  },
+  "areaServed": "Wien, Österreich",
+  "description": {{ (.Params.description | default .Site.Params.description) | jsonify }},
+  "image": "{{ (.Params.image | default "/og/pfemeter-cover.jpg") | absURL }}"
+}
+</script>
+{{ end }}
+
+

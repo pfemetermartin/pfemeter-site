@@ -1,5 +1,13 @@
 ---
 title: "Impressum"
+description: "Gesetzlich erforderliche Angaben zu Dipl.-Ing. Martin Pfemeter, Zeichenbüro & Beratung e.U., Wien."
+keywords:
+  - Impressum
+  - Pfemeter
+  - Zeichenbüro
+  - Wien
+outputs:
+  - HTML  
 ---
 ## Dipl.-Ing. Martin Pfemeter Zeichenbüro & Beratung e.U.
 DI Martin Pfemeter  
