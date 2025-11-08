@@ -1,108 +1,95 @@
-{{- $title := .Title | default .Site.Title -}}
-{{- $desc := .Params.description | default .Site.Params.description -}}
-{{- $image := .Params.image | default "/og/pfemeter-cover.jpg" -}}
+{{- /* === Basic meta ================================ */ -}}
+{{- $title     := cond (ne .Title "") .Title .Site.Title -}}
+{{- $desc      := or .Params.description .Site.Params.description | default "" -}}
+{{- $imageRel  := or .Params.image "/og/pfemeter-cover.jpg" -}}
+{{- $image     := $imageRel | absURL -}}
+{{- $canonical := .Permalink -}}
 
-
+<title>{{ $title }} | {{ .Site.Title }}</title>
 <meta name="description" content="{{ $desc }}">
-<meta name="keywords" content="{{ delimit (.Params.keywords | default (slice)) ", " }}">
-<link rel="canonical" href="{{ .Permalink }}">
+{{- with .Params.keywords }}<meta name="keywords" content="{{ delimit . ", " }}">{{ end -}}
+<link rel="canonical" href="{{ $canonical }}">
 
+{{- /* === Open Graph / Twitter ====================== */ -}}
 <meta property="og:type" content="website">
 <meta property="og:title" content="{{ $title }}">
 <meta property="og:description" content="{{ $desc }}">
-<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:url" content="{{ $canonical }}">
 <meta property="og:image" content="{{ $image }}">
-
-<meta property="og:locale" content="{{ .Site.Language.Lang }}_AT">
-{{ range .AllTranslations }}
-<meta property="og:locale:alternate" content="{{ .Language.Lang }}_AT">
-{{ end }}
-
-
 <meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:locale" content="{{ .Site.Language.Lang }}_AT">
+{{- range .AllTranslations }}
+<meta property="og:locale:alternate" content="{{ .Language.Lang }}_AT">
+{{- end }}
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ $title }}">
 <meta name="twitter:description" content="{{ $desc }}">
 <meta name="twitter:image" content="{{ $image }}">
 
+{{- /* === hreflang alternates ======================== */ -}}
+<link rel="alternate" href="{{ .Permalink }}" hreflang="{{ .Site.Language.Lang }}">
+{{- range .AllTranslations }}
+<link rel="alternate" href="{{ .Permalink }}" hreflang="{{ .Language.Lang }}">
+{{- end }}
+<link rel="alternate" href="{{ .Permalink }}" hreflang="x-default">
 
-<!-- ========================= -->
-<!-- Existing meta and OG tags -->
-<!-- ========================= -->
-
-<meta name="twitter:image" content="{{ $image }}">
-
-<!-- ========================= -->
-<!-- JSON-LD Schema.org -->
-<!-- ========================= -->
-
-<!-- 1. Organization -->
+{{- /* === JSON-LD: Organization + WebSite ============ */ -}}
 <script type="application/ld+json">
+{{- $b := .Site.Params.business -}}
 {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "Pfemeter – Zeichenbüro & Beratung e.U.",
-  "url": "{{ .Site.BaseURL }}",
-  "logo": "{{ "/og/pfemeter-logo.png" | absURL }}",
-  "sameAs": [
-    "https://www.linkedin.com/company/pfemeter-eu",
-    "https://www.instagram.com/martin.pfemeter"
-  ],
-  "description": {{ (.Params.description | default .Site.Params.description) | jsonify }}
+  "name": {{ .Site.Title | jsonify }},
+  "url": {{ .Site.BaseURL | jsonify }},
+  "logo": {{ (or $b.logo "/og/pfemeter-logo.png" | absURL) | jsonify }},
+  "sameAs": {{ (or $b.sameAs (slice)) | jsonify }},
+  "description": {{ $desc | jsonify }}
 }
 </script>
 
-<!-- 2. WebSite -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "url": "{{ .Site.BaseURL }}",
+  "url": {{ .Site.BaseURL | jsonify }},
   "name": {{ .Site.Title | jsonify }},
-  "inLanguage": "{{ .Site.Language.Lang }}",
-  "alternateName": "Pfemeter",
-  "sameAs": [
-    "https://www.linkedin.com/company/pfemeter-eu",
-    "https://www.instagram.com/martin.pfemeter"
-  ]
+  "inLanguage": "{{ .Site.Language.Lang }}"
 }
 </script>
 
-<!-- 3. ProfessionalService -->
+{{- /* === JSON-LD: ProfessionalService =============== */ -}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  "name": "Pfemeter – Zeichenbüro & Beratung e.U.",
-  "url": "{{ .Site.BaseURL }}",
-  "image": "{{ "/og/pfemeter-cover.jpg" | absURL }}",
-  "description": {{ (.Params.description | default .Site.Params.description) | jsonify }},
-  "areaServed": {
-    "@type": "AdministrativeArea",
-    "name": "Wien"
+  "name": {{ .Site.Title | jsonify }},
+  "url": {{ .Site.BaseURL | jsonify }},
+  "image": {{ $image | jsonify }},
+  "description": {{ $desc | jsonify }},
+  "areaServed": { "@type": "AdministrativeArea", "name": "Wien" },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": {{ or $b.address.street "" | jsonify }},
+    "addressLocality": {{ or $b.address.city "Wien" | jsonify }},
+    "postalCode": {{ or $b.address.postcode "" | jsonify }},
+    "addressCountry": {{ or $b.address.country "AT" | jsonify }}
   }
 }
 </script>
 
-<!-- 4. Service (nur bei type = 'sparte') -->
-{{ if eq .Params.type "sparte" }}
+{{- /* === Optional: JSON-LD Service für Sparten ===== */ -}}
+{{- if eq .Params.type "sparte" -}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Service",
   "name": {{ .Title | jsonify }},
-  "url": "{{ .Permalink }}",
-  "provider": {
-    "@type": "Organization",
-    "name": "Pfemeter – Zeichenbüro & Beratung e.U.",
-    "url": "{{ .Site.BaseURL }}"
-  },
+  "url": {{ .Permalink | jsonify }},
+  "provider": { "@type": "Organization", "name": {{ .Site.Title | jsonify }}, "url": {{ .Site.BaseURL | jsonify }}},
   "areaServed": "Wien, Österreich",
-  "description": {{ (.Params.description | default .Site.Params.description) | jsonify }},
-  "image": "{{ (.Params.image | default "/og/pfemeter-cover.jpg") | absURL }}"
+  "description": {{ (or .Params.description $desc) | jsonify }},
+  "image": {{ $image | jsonify }}
 }
 </script>
-{{ end }}
-
-
+{{- end -}}
