@@ -2,7 +2,7 @@
 {{- $desc := .Params.description | default .Site.Params.description -}}
 {{- $image := .Params.image | default "/og/pfemeter-cover.jpg" -}}
 
-<title>{{ $title }}</title>
+
 <meta name="description" content="{{ $desc }}">
 <meta name="keywords" content="{{ delimit (.Params.keywords | default (slice)) ", " }}">
 <link rel="canonical" href="{{ .Permalink }}">
