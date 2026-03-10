@@ -47,19 +47,19 @@ term     = ["HTML", "RSS"]
     languageName = "Deutsch"
     weight = 1
     contentDir = "content"
-    title = 'Dipl.-Ing. Martin Pfemeter Zeichenbüro & Beratung e.U.'
+    title = 'Pfemeter Engineering e.U.'
     [languages.de.params]
       brand   = "Pfemeter"
-      tagline = "Präzise 3D-Modellierung & Beratung für Wasser-, Infrastruktur- und Bauprojekte"
+      tagline = "technische Beratung und Planung für Wasser-, Infrastruktur- und Bauprojekte, Anlagentechnik, Leitungsnetzwerke, präzise 3D-Modelle (Solid & Civil)"
 
   [languages.en]
     languageName = "English"
     weight = 2
     contentDir = "content/en"
-    title = 'Dipl.-Ing. Martin Pfemeter Zeichenbüro & Beratung e.U.'
+    title = 'Pfemeter Engineering e.U.'
     [languages.en.params]
       brand   = "Pfemeter"
-      tagline = "Precise 3D Modeling & Consulting for Water, Infrastructure, and Construction Projects"
+      tagline = "Technical consulting and engineering design for water, infrastructure and construction projects, plant engineering, pipeline and utility networks, and precise 3D modelling (Solid & Civil)"
 
 # Menüs pro Sprache
 [languages.de.menu]
