@@ -22,7 +22,7 @@ outputs:
 
 ## DI Martin Pfemeter
 
-Ich bin DI Martin Pfemeter, Gründer von Zeichenbüro & Beratung e.U.
+Ich bin DI Martin Pfemeter, Gründer von Pfemeter Engineering e.U.
 Meine berufliche Laufbahn führte mich von der Konstruktion im Maschinenbau über die wissenschaftliche Arbeit an der Universität für Bodenkultur bis hin zur Planung, Projektleitung und Bauabwicklung im Bereich Wasser-, Infrastruktur- und Anlagenbau.
 Diese Vielseitigkeit prägt meine Arbeit bis heute – technische Präzision, Verständnis für Abläufe und die Fähigkeit, komplexe Zusammenhänge klar zu strukturieren.
 
