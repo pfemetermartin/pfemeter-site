@@ -1,3 +1,21 @@
+- title: "Ingenieurleistungen (im Aufbau)"
+  slug: "ingenieurleistungen"
+  tagline: "Nach Befähigungsprüfung"
+  color: "#111827"
+  accent: "#0EA5E9"
+
+- title: "Auftraggeberunterstützung & Beratung"
+  slug: "auftraggeberunterstuetzung"
+  tagline: "Von der Idee bis zur Umsetzung"
+  color: "#111827"
+  accent: "#DB2777"
+
+- title: "Innovation"
+  slug: "innovation"
+  tagline: "Fordern Sie mich heraus – wenn es Potenzial hat, finde ich einen Weg"
+  color: "#111827"
+  accent: "#F59E0B"
+
 - title: "3D Modellierung (Solid)"
   slug: "3d-solid"
   tagline: "Präzise Volumenmodellierung"
@@ -15,21 +33,3 @@
   tagline: "Planung und Modellierung komplexer Kanal-, Wasser- und Rohrnetzsysteme"
   color: "#111827"
   accent: "#10B981"     # sanftes Grün
-
-- title: "Auftraggeberunterstützung & Beratung"
-  slug: "auftraggeberunterstuetzung"
-  tagline: "Von der Idee bis zur Umsetzung"
-  color: "#111827"
-  accent: "#DB2777"
-
-- title: "Ingenieurleistungen (im Aufbau)"
-  slug: "ingenieurleistungen"
-  tagline: "Nach Befähigungsprüfung"
-  color: "#111827"
-  accent: "#0EA5E9"
-
-- title: "Innovation"
-  slug: "innovation"
-  tagline: "Fordern Sie mich heraus – wenn es Potenzial hat, finde ich einen Weg"
-  color: "#111827"
-  accent: "#F59E0B"
