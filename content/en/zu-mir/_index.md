@@ -47,6 +47,11 @@ In addition:
 
 ## Berufserfahrung {#berufserfahrung}
 
+**Since March 2026**  
+**Freelance Hydraulic Engineer & Consultant**  
+*Pfemeter Engineering e.U.*  
+Self-employed
+
 **Since September 2025**  
 **Freelance Hydraulic Engineer & Consultant**  
 *Dipl.-Ing. Martin Pfemeter Zeichenbüro & Beratung e.U.*  
