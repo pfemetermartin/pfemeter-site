@@ -1,5 +1,5 @@
 baseURL = "https://www.pfemeter.at/"
-title = 'Dipl.-Ing. Martin Pfemeter Zeichenbüro & Beratung e.U.'
+title = 'Pfemeter Engineering e.U.'
 defaultContentLanguage = "de"
 defaultContentLanguageInSubdir = false
 enableRobotsTXT = true
@@ -25,8 +25,8 @@ term     = ["HTML", "RSS"]
 # Globale Params (optional)
 [params]
   brand   = "Pfemeter"
-  tagline = "Präzise 3D-Modellierung & Beratung für Wasser-, Infrastruktur- und Bauprojekte"
-  description = "Präzise 3D-Modelle (Solid & Civil), Leitungsnetzwerke und technische Beratung für Wasser-, Infrastruktur- und Bauprojekte."
+  tagline = "technische Beratung und Planung für Wasser-, Infrastruktur- und Bauprojekte, Anlagentechnik, Leitungsnetzwerke, präzise 3D-Modelle (Solid & Civil)"
+  description = "technische Beratung und Planung für Wasser-, Infrastruktur- und Bauprojekte, Anlagentechnik, Leitungsnetzwerke, präzise 3D-Modelle (Solid & Civil) Dipl.-Ing. Martin Pfemeter | Ingenieurbüro für Kulturtechnik und Wasserwirtschaft in Wien."
 
   [params.business]
     logo = "/og/pfemeter-logo.png"
