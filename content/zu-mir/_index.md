@@ -45,6 +45,9 @@ Darüber hinaus:
 
 ## Berufserfahrung {#berufserfahrung}
 
+**seit März 2026**  
+Selbstständig – **Pfemeter Engineering e.U.**
+
 **seit Sept. 2025**  
 Selbstständig – **Dipl.-Ing. Martin Pfemeter Zeichenbüro & Beratung e.U.**
 
