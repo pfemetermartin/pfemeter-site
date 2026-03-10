@@ -1,6 +1,6 @@
 ---
 title: "Pfemeter Engineering e.U."
-description: "Präzise 3D-Modelle (Solid & Civil), Leitungsnetzwerke und technische Beratung für Wasser-, Infrastruktur- und Bauprojekte. Dipl.-Ing. Martin Pfemeter | Wien."
+description: "technische Beratung für Wasser-, Infrastruktur- und Bauprojekte, Anlagentechnik, Leitungsnetzwerke, präzise 3D-Modelle (Solid & Civil) Dipl.-Ing. Martin Pfemeter | Ingenieurbüro für Kulturtechnik und Wasserwirtschaft in Wien."
 keywords:
   - 3D Modellierung
   - Civil 3D
