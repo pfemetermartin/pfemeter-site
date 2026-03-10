@@ -1,12 +1,4 @@
 +++
-date = '2025-11-05T21:39:43+01:00'
-title = 'Engineering Services'
-type = "sparte"
-description = "Engineering services in hydraulic and infrastructure design – from hydraulic calculations to digital project documentation."
-keywords = ["engineering", "hydraulics", "infrastructure", "water engineering", "Pfemeter", "Vienna"]
-image = "/og/en-sparten-engineering.jpg"
-+++
-+++
 date = '2026-03-10T21:39:43+01:00'
 title = "Engineering Services"
 type = "sparte"
@@ -14,7 +6,6 @@ description = "Engineering services for water management, infrastructure and pla
 keywords = ["Engineering services", "Water engineering", "Hydraulics", "Infrastructure", "Pfemeter", "Vienna", "Plant engineering", "Civil engineering", "Utility networks"]
 image = "/og/sparten-ingenieurleistungen.jpg"
 +++
-
 # Technical infrastructure requires clear planning.
 
 I support public and private clients in the **planning and implementation of technical infrastructure projects** – from initial concepts and feasibility studies through planning and modelling across all relevant project phases, including the preparation of bills of quantities and tender documents, to project preparation for construction as well as leading or supporting site supervision in invoice verification, evaluation of change orders and schedule management. My main focus lies in projects within **water management, infrastructure and plant engineering as well as river engineering and flood protection**, particularly involving utility networks, technical structures and complex interfaces between planning, modelling and execution.
