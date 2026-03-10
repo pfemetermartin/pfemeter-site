@@ -19,7 +19,7 @@ outputs:
 
 ## DI Martin Pfemeter
 
-I am the founder of Zeichenbüro & Beratung e.U.
+I am the founder of Pfemeter Engineering e.U.
 
 My professional journey has taken me from mechanical engineering design through academic research at the University of Natural Resources and Life Sciences (BOKU) to planning, project management and construction supervision in the fields of water, infrastructure and plant engineering.
 
