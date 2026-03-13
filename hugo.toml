@@ -50,7 +50,7 @@ term     = ["HTML", "RSS"]
     title = 'Pfemeter Engineering e.U.'
     [languages.de.params]
       brand   = "Pfemeter"
-      tagline = "technische Beratung und Planung für Wasser-, Infrastruktur- und Bauprojekte, Anlagentechnik, Leitungsnetzwerke, präzise 3D-Modelle (Solid & Civil)"
+      tagline = "Technische Beratung und Planung für Wasserwirtschaft, Infrastrukturprojekte und Leitungsnetze – einschließlich Rohrstatik und Hydraulik, hydraulische Berechnungen, Baugrubenplanung, wasserrechtlicher Einreichungen, statische Bemessungen und präziser 3D-Modellierung (Solid & Civil), BIM"
 
   [languages.en]
     languageName = "English"
@@ -59,7 +59,7 @@ term     = ["HTML", "RSS"]
     title = 'Pfemeter Engineering e.U.'
     [languages.en.params]
       brand   = "Pfemeter"
-      tagline = "Technical consulting and engineering design for water, infrastructure and construction projects, plant engineering, pipeline and utility networks, and precise 3D modelling (Solid & Civil)"
+      description = "Engineering office in Vienna specialising in water management and technical infrastructure. Planning of infrastructure and pipeline networks – from feasibility studies and concept development to hydraulic calculations, pipeline structural analysis and excavation design, as well as water law permitting, tender documentation and project support during construction."
 
 # Menüs pro Sprache
 [languages.de.menu]
