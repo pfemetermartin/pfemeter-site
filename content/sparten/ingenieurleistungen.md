@@ -33,42 +33,42 @@ Ich arbeite sowohl an **konzeptionellen Planungsaufgaben** als auch an der **pr�
 
 ## Planung und Engineering
 
-Ingenieurtätigkeiten für Wasser-, Infrastruktur- und Bauprojekte, Anlagentechnik
-Technische Beratung
-Planung technischer Infrastrukturprojekte in allen Leistungsphasen
-Machbarkeitsstudien, Variantenstudien und Konzeptentwicklung
-Planung von wasserwirtschaftlichen Anlagen und Infrastrukturbauwerken
-Planung von Leitungsnetzwerken für Wasser, Kanal und technische Medien
-Planung und Modellierung komplexer Rohr- und Leitungssysteme
-Unterstützung von Planungs- und Projektteams in komplexen Infrastrukturprojekten
+- Ingenieurtätigkeiten für Wasser-, Infrastruktur- und Bauprojekte, Anlagentechnik
+- Technische Beratung
+- Planung technischer Infrastrukturprojekte in allen Leistungsphasen
+- Machbarkeitsstudien, Variantenstudien und Konzeptentwicklung
+- Planung von wasserwirtschaftlichen Anlagen und Infrastrukturbauwerken
+- Planung von Leitungsnetzwerken für Wasser, Kanal und technische Medien
+- Planung und Modellierung komplexer Rohr- und Leitungssysteme
+- Unterstützung von Planungs- und Projektteams in komplexen Infrastrukturprojekten
 
 ## Genehmigungen und Verfahren
-Bewilligungsplanung
-Erstellung und Einreichung wasserrechtlicher Bewilligungsunterlagen (WRG)
-Technische Beiträge zu Genehmigungsverfahren und Infrastrukturprojekten
+- Bewilligungsplanung
+- Erstellung und Einreichung wasserrechtlicher Bewilligungsunterlagen (WRG)
+- Technische Beiträge zu Genehmigungsverfahren und Infrastrukturprojekten
 
 ## Statik, Grundbau und technische Bauwerke
 
-Rohrstatik und statische Bemessung von Leitungs- und Rohrsystemen
-Statische Bemessung von Fundamenten für technische Anlagen (z. B. Pumpenfundamente, Schachtfundamente, Anlagensockel)
-Statische Nachweise für Leitungsbauwerke und kleinere technische Tragwerke im Infrastrukturkontext
-Planung von Baugruben für Infrastruktur- und Leitungsbauprojekte
-Baugrubenentwässerung und Grundwasserhaltung
-Grundbaukonzepte für Leitungsbauwerke, Schächte und technische Anlagen
-Künettenplanung und Verbaukonzepte im Leitungsbau (z. B. Systemverbauten)
-Stahlbau- und Tragwerkskonzepte für kleinere technische Konstruktionen im Anlagen- und Infrastrukturkontext
-Technische Abstimmung statischer und geotechnischer Fragestellungen innerhalb komplexer Infrastrukturprojekte
+- Rohrstatik und statische Bemessung von Leitungs- und Rohrsystemen
+- Statische Bemessung von Fundamenten für technische Anlagen (z. B. Pumpenfundamente, Schachtfundamente, Anlagensockel)
+- Statische Nachweise für Leitungsbauwerke und kleinere technische Tragwerke im Infrastrukturkontext
+- Planung von Baugruben für Infrastruktur- und Leitungsbauprojekte
+- Baugrubenentwässerung und Grundwasserhaltung
+- Grundbaukonzepte für Leitungsbauwerke, Schächte und technische Anlagen
+- Künettenplanung und Verbaukonzepte im Leitungsbau (z. B. Systemverbauten)
+- Stahlbau- und Tragwerkskonzepte für kleinere technische Konstruktionen im Anlagen- und Infrastrukturkontext
+- Technische Abstimmung statischer und geotechnischer Fragestellungen innerhalb komplexer Infrastrukturprojekte
 
 ## Planungstools, Ausschreibung und Projektabwicklung
 
-Ausführungsplanung
-3D-Modellierung technischer Bauwerke und Anlagen (Solid & Civil)
-Erstellung technischer Planunterlagen und Modellgrundlagen
-Erstellung von Leistungsverzeichnissen und Ausschreibungsunterlagen
-Unterstützung bei Vergabeprozessen und Projektvorbereitung
-örtlichen Bauaufsicht (ÖBA) und Unterstützung der ÖBA
-Rechnungsprüfung und Prüfung von Mehrkostenforderungen
-Termin- und Projektmanagement in der Ausführungsphase
+- Ausführungsplanung
+- 3D-Modellierung technischer Bauwerke und Anlagen (Solid & Civil)
+- Erstellung technischer Planunterlagen und Modellgrundlagen
+- Erstellung von Leistungsverzeichnissen und Ausschreibungsunterlagen
+- Unterstützung bei Vergabeprozessen und Projektvorbereitung
+- örtlichen Bauaufsicht (ÖBA) und Unterstützung der ÖBA
+- Rechnungsprüfung und Prüfung von Mehrkostenforderungen
+- Termin- und Projektmanagement in der Ausführungsphase
 
 Ich arbeite sowohl an **konzeptionellen Planungsaufgaben** als auch an der **präzisen technischen Umsetzung in Modellen und Planunterlagen**. Dadurch können Planungsvarianten früh bewertet, Schnittstellen geklärt und Entscheidungen nachvollziehbar vorbereitet werden.
 
